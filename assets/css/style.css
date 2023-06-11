@@ -1,0 +1,111 @@
+/* GOOGLE FONT | MONTSERRAT */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap');
+
+/* VARIABLES */
+:root {
+  /* FONT */
+  --font: 'Raleway', sans-serif;
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  /* COLORS */
+  --rich-black-fogra-29: hsl(225, 25%, 9%);
+  --rich-black-fogra-39: hsl(170, 21%, 5%);
+  --raisin-black: hsl(240, 4%, 10%);
+  --black: hsl(207, 19%, 11%);
+  --light-gray: hsl(0, 3%, 80%);
+  --gunmetal-1: hsl(229, 15%, 21%);
+  --gunmetal-2: hsl(216, 22%, 18%);
+  --gainsboro: hsl(0, 7%, 88%);
+  --citrine: hsl(57, 97%, 45%);
+  --blue-neon: hsl(189, 100%, 50%);
+  --pink: hsl(341, 98%, 84%);
+  --navy: hsl(222, 40%, 36%);
+  --navy2: hsl(222, 39%, 26%);
+  --gold: hsl(44, 48%, 61%);
+  --gold2: hsl(45, 48%, 71%);
+  --gray-x: hsl(0, 0%, 74%);
+  --white: hsl(0, 100%, 100%);
+  --bg: hsl(0, 0%, 0%);
+  --bg2: hsla(0, 0%, 0%, 0.8);
+  --jet: hsl(0, 0%, 20%);
+  /* STREAMING COLORS*/
+  --netflix-color: #E50914;
+  --primevideo-color: #00A8E1;
+  --hbomax-color: #941DE8;
+  --disneyplus-color: #BFF5FD;
+  --hulu-color: #4FCC7F;
+  --starplus-color: #FF7C01;
+  --appletv-color: #EEE;
+  --tubi-color: #FD2566;
+  --youtubepremium-color: #FF0000;
+  --googleplay-color: #9b005f;
+  /* PADDING */
+  --section-padding: 100px;
+  --section-padding2: 60px;
+  /* TRANSITIONS */
+  --transition-1: 0.25s ease;
+  --transition-2: 0.4s ease-in;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+a,
+img,
+span,
+input,
+button,
+ion-icon {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+select,
+button {
+  cursor: pointer;
+  border: none;
+  font: inherit;
+  background: none;
+}
+
+input {
+  border: none;
+  font: inherit;
+  width: 100%;
+}
+
+html {
+  font-family: var(--font);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+
+}
+
+body.active {
+  overflow: hidden;
+}
+
+/* TITLES | SUBTITLES */
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  color: var(--white);
+}

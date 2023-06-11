@@ -1,0 +1,204 @@
+@media (min-width: 550px) {
+  .container {
+    max-width: 540px;
+    margin-inline: auto;
+  }
+
+  /* MOVIE GENRES */
+  .intro-cinema {
+    min-height: unset;
+  }
+
+  .intro-cinema-content {
+    margin-top: 80px;
+  }
+
+  .intro-cinema-subtitle {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 72px;
+  }
+
+  .intro-cinema-title {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .badge-fill,
+  .badge-outline {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 14px 24px;
+    margin-top: 30px;
+  }
+
+  .genre-wrapper a {
+    margin: 6px 0;
+    font-size: 16px;
+  }
+
+  /* WEEKLY HIGHLIGHTS */
+  .movies-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+  }
+
+  .highlights .movies-list>li {
+    min-width: calc(50% - 25px);
+  }
+
+  .title-wrapper .card-title {
+    font-size: 16px;
+  }
+
+  .highlights .filter-btn {
+    font-size: 16px;
+    margin: 18px 0;
+  }
+
+  /* STREAMING SERVICES */
+  .streaming-services {
+    width: 100%;
+  }
+
+  .platforms-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 60px;
+  }
+
+  .streaming-services .platforms-list>li {
+    min-width: calc(50% - 15px);
+  }
+
+  .platform-card {
+    padding: 5px;
+    border: none;
+  }
+
+  .platform-logo img {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+  }
+
+  .card-text {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  /* TOP RATED SERIES */
+  .top-rated-series-list.scrollbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+  }
+}
+
+@media (min-width: 770px) {
+  .container {
+    max-width: 760px;
+  }
+
+  /* HEADER */
+  .header-actions {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  .header-actions .btn-primary {
+    display: none;
+  }
+
+  /* WEEKLY HIGHLIGHTS */
+  .movies-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 30px;
+  }
+
+  /* STREAMING SERVICES */
+  .platforms-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 972px;
+  }
+
+  /* HEADER */
+  .header.active {
+    padding-block: 5px;
+  }
+
+  .logo {
+    margin-right: 70px;
+  }
+
+  .menu-open-btn,
+  .navbar-top,
+  .navbar-social-list {
+    display: none;
+  }
+
+  .navbar {
+    all: unset;
+    margin-left: auto;
+  }
+
+  .header-actions {
+    margin-left: 0;
+    order: 1;
+  }
+
+  .navbar-list {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
+  }
+
+  .navbar-link {
+    border-bottom: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 30px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  /* WEEKLY HIGHLIGHTS */
+  .movies-list.scrollbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* STREAMING SERVICES */
+  .platforms-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 60px;
+  }
+
+  .streaming-services .platforms-list>li {
+    min-width: calc(25% - 20px);
+  }
+
+  /* TOP RATED SERIES */
+  .top-rated-series-list.scrollbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px 30px;
+  }
+}

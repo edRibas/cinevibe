@@ -1,0 +1,131 @@
+/* INTRODUCTION TEXT */
+.intro-cinema {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding-block: var(--section-padding);
+   background: linear-gradient(150deg, rgba(55, 76, 127, 1) 40%, rgba(254, 172, 198, 1) 100%);
+   height: 100vh;
+   max-height: 1000px;
+   min-height: 700px;
+}
+
+.intro-cinema-content {
+   margin-top: 100px;
+}
+
+.intro-cinema-subtitle {
+   color: var(--pink);
+   margin-bottom: 8px;
+   font-size: 42px;
+   font-weight: 500;
+   letter-spacing: 5px;
+}
+
+.intro-cinema-title {
+   margin-bottom: 40px;
+   font-size: 15px;
+   font-weight: 500;
+   letter-spacing: 2px;
+   line-height: 1.5;
+}
+
+.intro-cinema-title>strong {
+   color: var(--gold2);
+   text-transform: uppercase;
+}
+
+/* REVIEWS OR WHERE TO WATCH OPTIONS */
+.badge {
+   font-weight: 500;
+   font-size: 13px;
+   border: 1px solid transparent;
+   padding: 4px 8px;
+}
+
+.badge-fill {
+   background: var(--gold);
+   border-radius: 18px;
+   transition: var(--transition-1);
+}
+
+.badge-fill:hover {
+   background: var(--gold2);
+}
+
+.badge-outline {
+   color: var(--black);
+   background: var(--white);
+   border-radius: 18px;
+}
+
+.badge-outline:hover {
+   background: var(--gold2);
+}
+
+/* MOVIE GENRES */
+.movie-genres {
+   color: var(--gold2);
+   margin: 6px 0;
+   font-weight: 500;
+}
+
+.genre-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 40px;
+}
+
+.badge-wrapper,
+.genre-wrapper,
+.date-time {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 5px 10px;
+   margin: 6px 0;
+}
+
+.genre-wrapper>a {
+   color: var(--white);
+   font-size: 16px;
+   font-weight: 500;
+   margin: 6px 0;
+   transition: var(--transition-1);
+}
+
+.genre-wrapper>a:is(:hover, :focus) {
+   text-decoration: overline;
+   color: var(--gold2);
+}
+
+/* PREMIUM CONTENT BUTTON */
+.btn {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   transition: var(--transition-1);
+   padding: 10px 18px;
+   color: var(--citrine);
+   text-transform: uppercase;
+   font-size: 14px;
+   margin-top: 28px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   border-radius: 28px;
+}
+
+.btn-primary {
+   margin: 18px 0;
+   background: var(--black);
+   color: var(--gold2);
+   border: none;
+}
+
+.btn-primary:is(:hover, :focus) {
+   background: var(--gold2);
+   color: var(--black);
+   box-shadow: 3px 3px 2px 2px var(--rich-black-fogra-29);
+}

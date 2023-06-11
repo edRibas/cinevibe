@@ -1,0 +1,137 @@
+.footer {
+  background: var(--rich-black-fogra-29);
+}
+
+.footer-content {
+  background: url(../images/footer.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-block: var(--section-padding2);
+}
+
+.footer-wrapper .logo {
+  margin-inline: auto;
+  margin-bottom: 50px;
+  width: max-content;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.footer-divider {
+  border-top: 1px solid var(--pink);
+  margin-block: 20px;
+  height: 4px;
+  border-bottom: 1px solid var(--gold);
+}
+
+.footer-list,
+.footer-guide-list,
+.social-media-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  gap: 10px;
+}
+
+/* FOOTER MENU ITENS */
+.footer-item {
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: overline;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+:is(.footer-item,
+  .footer-guide-list-item):is(:hover, :focus) {
+  color: var(--pink);
+}
+
+/* FOOTER GUIDE ITENS */
+.footer-guide-list {
+  margin-bottom: 18px;
+}
+
+.footer-guide-list-item {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--gold2);
+}
+
+/* FOOTER SOCIAL MEDIA */
+.social-media-list {
+  column-gap: 32px;
+}
+
+.social-media-list-item {
+  display: grid;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  color: var(--white);
+  background: var(--gold);
+  place-items: center;
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.social-media-list-item:is(:hover, :focus) {
+  color: var(--gold);
+  background: var(--white);
+}
+
+.footer-content-copyright {
+  padding-block: 8px;
+}
+
+.copyrighting {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1.2px;
+  color: var(--white);
+}
+
+.copyrighting a {
+  color: var(--white);
+}
+
+.copyrighting a:hover {
+  color: var(--gold2);
+}
+
+/* PAGE UP SHORTCUT */
+.pageup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(150deg, rgb(46, 46, 46) 40%, rgb(104, 102, 67) 80%);
+  color: var(--gold2);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: var(--transition-1);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pageup:is(:hover, :focus) {
+  background: linear-gradient(150deg, rgba(254, 172, 198, 0.8) 40%, rgba(55, 76, 127, 0.8) 80%);
+  color: var(--black);
+}
+
+.pageup.active {
+  opacity: 1;
+  visibility: visible;
+}

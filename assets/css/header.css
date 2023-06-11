@@ -1,0 +1,29 @@
+/* HEADER */
+.container {
+  padding-inline: 26px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-block: 28px;
+  transition: var(--transition-2);
+  z-index: 4;
+}
+
+.header.active {
+  background: var(--black);
+  padding-block: 28px;
+}
+
+.header-actions {
+  display: none;
+}

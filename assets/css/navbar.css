@@ -1,0 +1,92 @@
+/* NAVIGATION BAR */
+.menu-open-btn {
+    color: var(--white);
+    font-size: 40px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--black);
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    box-shadow: -1px 0 3px var(--jet);
+    transition: var(--transition-2);
+    visibility: hidden;
+    z-index: 3;
+}
+
+.navbar.active {
+    right: 0;
+    visibility: visible;
+    transition: .8 ease-out;
+}
+
+.navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 25px;
+}
+
+.menu-close-btn {
+    color: var(--white);
+    padding: 5px;
+    font-size: 25px;
+}
+
+.menu-close-btn ion-icon {
+    --ionicon-stroke-width: 60px
+}
+
+.navbar-list {
+    border-top: 1px solid var(--jet);
+    margin-bottom: 20px;
+}
+
+.navbar-link {
+    font-size: 16px;
+    font-weight: var(--font-weight-500);
+    padding: 10px 25px;
+    border-bottom: 1px solid var(--gold2);
+    color: var(--white);
+}
+
+.navbar-link:is(:hover, :focus) {
+    color: var(--pink);
+}
+
+/* SOCIAL MEDIA */
+.navbar-social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.navbar-social-link {
+    font-size: 22px;
+    transition: var(--transition-1);
+    color: var(--white);
+}
+
+.navbar-social-link:hover {
+    color: var(--gold2)
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+    transition: var(--transition-2);
+    background: var(--jet);
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}

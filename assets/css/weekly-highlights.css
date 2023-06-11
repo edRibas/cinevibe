@@ -1,0 +1,199 @@
+/* WEEKLY HIGHLIGHTS SECTION*/
+.highlights {
+   padding-block: var(--section-padding2);
+   background: url("../images/highlights-bg.jpg") no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.highlights .flex-wrapper {
+   margin-bottom: 30px;
+}
+
+/* WEEKLY HIGHLIGHTS TITLE AND SUBTITLE */
+.section-subtitle {
+   text-align: center;
+   text-decoration: overline;
+   font-size: 26px;
+   font-weight: 700;
+   margin-bottom: 22px;
+   color: var(--gold2);
+   text-transform: uppercase;
+}
+
+.section-title {
+   text-align: center;
+   font-size: 16px;
+   margin-bottom: 30px;
+   color: var(--white);
+}
+
+.section-title strong {
+   text-transform: uppercase;
+   color: var(--gold2);
+}
+
+/* WEEKLY HIGHLIGHTS FILTER BUTTONS */
+.filter-list {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+.highlights .filter-btn {
+   font-size: 14px;
+   font-weight: 500;
+   border: 1px solid var(--jet);
+   padding: 10px 22px;
+   color: var(--gold2);
+   background: var(--black);
+   border-radius: 18px;
+   transition: var(--transition-1);
+}
+
+.highlights .filter-btn:hover {
+   background: var(--gold2);
+   color: var(--rich-black-fogra-29);
+}
+
+.highlights .filter-btn:focus {
+   border-color: var(--gold2);
+}
+
+/* MOVIE CARDS */
+.movies-list {
+   display: grid;
+   gap: 25px;
+}
+
+.movie-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+}
+
+.movie-card .card-banner {
+   overflow: hidden;
+   aspect-ratio: 2/3;
+   border-radius: 10px;
+   position: relative;
+   background: var(--jet);
+   margin-bottom: 12px;
+   transition: var(--transition-1);
+}
+
+.movie-card .card-banner::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   transition: var(--transition-1);
+}
+
+.movie-card .card-banner:hover {
+   box-shadow: 0 1px 2px hsla(0, 0%, 5%, 0.5);
+}
+
+.movie-card .card-banner:hover::after {
+   background: hsla(0, 0%, 100%, .05);
+}
+
+.movie-card .card-banner img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.movie-card .title-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 4px;
+   gap: 12px;
+}
+
+.movie-card .card-title {
+   color: var(--gold);
+   font-size: 16px;
+   transition: var(--transition-1);
+}
+
+.movie-card .card-title:is(:hover, :focus) {
+   color: var(--citrine);
+}
+
+.movie-card .title-wrapper time {
+   color: var(--white);
+   font-size: 11px;
+   font-weight: 700;
+}
+
+.movie-card .card-meta {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 18px;
+}
+
+.movie-card .badge {
+   color: var(--white);
+}
+
+.where-to-watch {
+   background: var(--black);
+   color: var(--citrine);
+   font-size: 12px;
+   padding: 6px;
+   border-radius: 10px;
+}
+
+.movie-card .duration {
+   margin-left: auto;
+}
+
+.movie-card :is(.duration, .rating) {
+   display: flex;
+   align-items: center;
+   font-size: 11px;
+   color: var(--white);
+   font-weight: 700;
+   gap: 8px;
+}
+
+.movie-card :is(.duration, .rating) ion-icon {
+   font-size: 18px;
+   color: var(--citrine);
+}
+
+/* CUSTOM SLIDER */
+.highlights .movies-list>li {
+   min-width: 100%;
+   scroll-snap-align: start;
+}
+
+.movies-list.scrollbar {
+   display: flex;
+   justify-content: flex-start;
+   overflow-x: auto;
+   scroll-snap-type: inline mandatory;
+   gap: 50px;
+   padding-bottom: 20px;
+}
+
+.scrollbar::-webkit-scrollbar {
+   height: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+   background: transparent;
+   box-shadow: 0 0 0 2px var(--jet);
+   border-radius: 3px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+   background: var(--gold);
+   box-shadow: inset 0 1px 0 var(--black);
+   border-radius: 3px;
+}
